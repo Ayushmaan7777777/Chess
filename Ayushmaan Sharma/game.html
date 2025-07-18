@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chess Game</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <div id="message"></div>
+  <div id="chessboard"></div>
+  <button onclick="window.location.href='index.html'" >Back to Menu</button>
+
+  <script>
+    // Dynamically load the right script based on mode
+    const params = new URLSearchParams(window.location.search);
+    const mode = params.get('mode');
+
+    const script = document.createElement('script');
+    script.src = mode === 'online' ? 'online.js' : 'script.js';
+    document.body.appendChild(script);
+  </script>
+</div>
+
+<!-- style="margin: 10px; font-weight: bold; font-size: 18px;" -->
+ 
+</body>
+</html>

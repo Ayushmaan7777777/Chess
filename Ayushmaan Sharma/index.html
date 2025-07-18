@@ -3,35 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quote Generator</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <header><div><h1>I am Ayushmaan Sharma</h1></div></header>
     
-    <div class="container"> 
-        <div class="top">
-            <h1>Quotes</h1>
-            <p>Quotes that will inspire and enlighten you.</p>
-        </div>
-        <div class="main">
-            <div class="quote-area">
-                <p id="quote">
-                    "Life ngin knowing what's going to happen next"
-                </p>
-                <p id="author">
-                    - Gilda Radner
-                </p>
-            </div>
-        </div>
-        <div class="bottom">
-            <button id="btn">Generate new quote</button>
-        </div>
-        <div class="end">
-            <p>Made using Zenquotes.io API</p>
-        </div>
-    </div>
+       <div class="centered">
 
-    <script src="app.js"></script>
+    <h1 id="welcome">Welcome to Chess</h1>
+    <button onclick="startGame('offline')">Play Offline</button>
+    <button onclick="startGame('online')">Play Online</button>
+  <script>
+    function startGame(mode) {
+      // Redirect to game.html with mode in URL
+      window.location.href = `game.html?mode=${mode}`;
+    }
+  </script>
+
 </body>
 </html>
